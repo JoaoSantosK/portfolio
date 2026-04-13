@@ -4,11 +4,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--header-bg-color-lm);
+    background-color: var(--color-surface);
 }
 
 header h1 {
-    color: var(--color-text-main);
+    color: var(--color-text);
     margin-left: 50px;
     font-size: 24px;
 }
@@ -31,10 +31,10 @@ header nav ul li {
 }
 
 header nav ul li:hover {
-    border-bottom: 2px solid var(--color-text-main);
+    border-bottom: 2px solid var(--color-primary-hover);
 }
 
 header nav ul li a {
-    color: #fff;
+    color: var(--color-text-secondary);
     text-decoration: none;
 }

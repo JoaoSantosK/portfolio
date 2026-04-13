@@ -1,12 +1,39 @@
 :root {
-  --bg-color-primary: #0F172A; /*Background Color - Light Mode*/
-  --bg-color-dark-mode: #0d0d0d; /*Background Color - Dark Mode*/
-  --bg-surface-cards: #1E293B; /*Background Color for Cards and Surfaces*/
-  --color-text-main : #F8FAFC;
-  --color-text-secondary: #444444;
-  /*Header*/
-  --header-bg-color-lm: #4d4d4d; /*Header Background Color - Light Mode*/
-  --header-bg-color-dm: #d6d6d6; /*Header Background Color - Dark Mode*/
+  /* Base */
+  --color-bg: #0F172A;
+  --color-surface: #1E293B;
+
+  /* Texto */
+  --color-text: #F8FAFC;
+  --color-text-secondary: #94A3B8;
+
+  /* Destaque */
+  --color-primary: #119ad4;
+  --color-primary-hover: #0EA5E9;
+
+  /* Extras */
+  --color-border: #334155;
+  --color-success: #22C55E;
+  --color-error: #EF4444;
+}
+
+.light {
+  /* Base */
+  --color-bg: #F8FAFC;
+  --color-surface: #FFFFFF;
+
+  /* Texto */
+  --color-text: #0F172A;
+  --color-text-secondary: #64748B;
+
+  /* Destaque */
+  --color-primary: #0EA5E9;
+  --color-primary-hover: #0284C7;
+
+  /* Extras */
+  --color-border: #E2E8F0;
+  --color-success: #16A34A;
+  --color-error: #DC2626;
 }
 
 * {
@@ -16,6 +43,6 @@
 }
 
 body {
-  background-color: var(--bg-color-primary);
+  background-color: var(--color-bg);
   font-family: 'Inter', sans-serif;
 }
