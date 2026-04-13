@@ -1,8 +1,12 @@
 :root {
-  --bg-color-primary: #d6d6d6;
-  --bg-color-dark-mode: #0d0d0d; 
-  --color-text-main : #504eff;
+  --bg-color-primary: #0F172A; /*Background Color - Light Mode*/
+  --bg-color-dark-mode: #0d0d0d; /*Background Color - Dark Mode*/
+  --bg-surface-cards: #1E293B; /*Background Color for Cards and Surfaces*/
+  --color-text-main : #F8FAFC;
   --color-text-secondary: #444444;
+  /*Header*/
+  --header-bg-color-lm: #4d4d4d; /*Header Background Color - Light Mode*/
+  --header-bg-color-dm: #d6d6d6; /*Header Background Color - Dark Mode*/
 }
 
 * {
@@ -13,4 +17,5 @@
 
 body {
   background-color: var(--bg-color-primary);
+  font-family: 'Inter', sans-serif;
 }
