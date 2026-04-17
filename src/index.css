@@ -1,6 +1,7 @@
 :root {
   /* Base */
   --color-bg: #0F172A;
+  --color-bg-surface: #1E293B;
   --color-surface: #1E293B;
 
   /* Texto */
@@ -43,6 +44,5 @@
 }
 
 body {
-  background-color: var(--color-bg);
   font-family: 'Inter', sans-serif;
 }

@@ -1,10 +1,10 @@
 import './Header.css';
-import { useState} from 'react';
+import { useState} from 'react'; // Importando useState para navegação móvel
 
 const Header = () => {
-    const [isNavActive, setIsNavActive] = useState(false);
+    const [isNavActive, setIsNavActive] = useState(false); // Estado para controlar a navegação móvel
 
-    const toggleNav = () => {
+    const toggleNav = () => { // Função para alternar a navegação móvel
         setIsNavActive(!isNavActive);
     };
 
