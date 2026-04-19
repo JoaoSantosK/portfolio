@@ -21,6 +21,7 @@ const Header = () => {
                 <nav className="nav-mob">
                     <i className={isNavActive ? 'fa-solid fa-xmark icon' : 'fa-solid fa-bars icon'} id='menu-icon' onClick={toggleNav}></i>
                     <ul className={isNavActive ? 'active' : ''}>
+                        <h1>Home</h1>
                         <li onClick={toggleNav}><a href="#">About</a></li>
                         <li onClick={toggleNav}><a href="#">Projects</a></li>
                         <li onClick={toggleNav}><a href="#">Contact</a></li>
