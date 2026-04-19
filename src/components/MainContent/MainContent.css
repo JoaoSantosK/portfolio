@@ -22,7 +22,7 @@ main h1 {
 }
 
 button.btn-my-job {
-    padding: 10px 20px;
+    padding: 15px 25px;
     font-size: 16px;
     color: var(--color-text-secondary);
     background-color: var(--color-surface);
@@ -45,17 +45,18 @@ button.btn-tech {
     border: 1px solid var(--color-surface);
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;    
+    transition: background-color 0.3s ease, color 0.3s ease, border 1.2s ease; 
 }
 
 button.btn-tech:hover {
     background-color: var(--color-surface);
     color: var(--color-primary);
+    border: 1px solid white;
 }
 
 section.intro-card {
     position: relative;
-    top: 140px;
+    top: 135px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -67,12 +68,31 @@ section.intro-card {
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     padding: 0 2%;
+    border: 2px solid transparent;
+    transition: 0.8s ease;
+}
+
+section.intro-card:hover {
+    border-top: 2px solid var(--color-primary);
+    border-left: 2px solid var(--color-primary);
+    border-right: 2px solid var(--color-primary);
+    box-shadow: 0px -7px 13px 6px rgba(1,56,84,0.8);
+    -webkit-box-shadow: 0px -7px 13px 6px rgba(1,56,84,0.8);
+    -moz-box-shadow: 0px -7px 13px 6px rgba(1,56,84,0.8);
 }
 
 section.intro-card h2 {
     color: var(--color-text);
-    font-size: 24px;
+    font-size: 32px;
     margin: 20px 0;
+}
+
+section.intro-card:hover h2 {
+    background: linear-gradient(to right, var(--color-primary) 0%, var(--color-text) 50%, var(--color-text-secondary) 70%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 1.2s ease;
 }
 
 section.intro-card p {
