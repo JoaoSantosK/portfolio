@@ -1,0 +1,96 @@
+section.work-section {
+    display: flex;
+    flex-direction: row;
+    padding: 40px 20px;
+    width: 100%;
+    height: 400px;
+    background-color: var(--color-surface);
+    border-top: 2px solid white;
+}
+
+section div.info-projects {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 30%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    padding: 1%;
+    border: 1px solid white;
+}
+
+section div.info-projects h1 {
+    font-size: 36px;
+    color: var(--color-text);
+}
+
+section div.info-projects p {
+    font-size: 18px;
+    color: var(--color-text-secondary);
+}
+
+section div.info-projects button {
+    width: 125px;
+    height: 40px;
+    color: var(--color-text-secondary);
+    background-color: transparent;
+    border: 1px solid var(--color-surface);
+    transition: background-color 0.8s ease, color 1s ease, border 0.8s ease;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+section div.info-projects button:hover {
+    border: 1px solid white;
+    color: white;
+}
+
+section div.projects {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 1%;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+}
+
+section div.projects .project-single {
+    width: 22.2%;
+    height: 130px;
+    cursor: pointer;
+    background-color: red;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    transition: 0.8s ease;
+}
+
+section div.projects .project-single:hover {
+    box-shadow: 0px 0px 26px 4px rgba(255,255,255,0.75);
+    -webkit-box-shadow: 0px 0px 26px 4px rgba(255,255,255,0.75);
+    -moz-box-shadow: 0px 0px 26px 4px rgba(255,255,255,0.75);
+    border-radius: 12px;
+}
+
+@media screen and (max-width: 980px) {
+    section.work-section .info-projects {
+        align-items: center;
+        border: 1px solid white;
+        width: 35%;
+        text-align: center;
+    }
+    section.work-section .projects .project-single {
+        width: 45%;
+    }
+    section.work-section .projects .project-single:nth-child(n+5) {
+        display: none;
+    }
+}
