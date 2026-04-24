@@ -1,10 +1,9 @@
 import './MainContent.css';
-import bg from '../../assets/bg-main.jpeg';
 
 const MainContent = () => {
     return (
-        <main className="main" style={{ backgroundImage: `url(${bg})` }}>
-            <h1>Desenvolvedor full-stack</h1>
+        <main className="main">
+            <h1>Desenvolvedor Full-Stack</h1>
 
             <div className="btns">
                 <button className="btn-my-job">Meu trabalho</button>
