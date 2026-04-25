@@ -86,7 +86,7 @@ section.intro-card:hover {
 section.intro-card h2 {
     color: var(--color-text);
     font-size: 32px;
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 section.intro-card:hover h2 {
@@ -110,6 +110,7 @@ section.intro-card p {
     }
     section.intro-card {
         top: 145px;
+        width: 90%;
     }
     section.intro-card p{
         font-size: 20px;
