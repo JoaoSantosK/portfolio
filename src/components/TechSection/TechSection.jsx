@@ -10,19 +10,19 @@ const TechSection = () => {
             </div>
             <div className="divisor"></div>
             <div className="techs">
-                    <div className="tech-single"><i class="fa-brands fa-linux"></i></div>
-                    <div className="tech-single"><i class="fa-brands fa-react"></i></div>
-                    <div className="tech-single"><i class="fa-brands fa-angular"></i></div>
-                    <div className="tech-single"><i class="fa-brands fa-java"></i></div>
-                    <div className="tech-single"><i class="fa-brands fa-js"></i></div>
-                    <div className="tech-single"><i class="fa-brands fa-node-js"></i></div>
-                    <div className="tech-single"><i class="fa-brands fa-python"></i></div>
-                    <div className="tech-single"><i class="fa-brands fa-html5"></i></div>
-                    <div className="tech-single"><i class="fa-brands fa-css3-alt"></i></div>
-                    <div className="tech-single"><i class="fa-brands fa-github"></i></div>
-                    <div className="tech-single"><i class="fa-brands fa-git-alt"></i></div>
-                    <div className="tech-single"><i class="fa-brands fa-sass"></i></div>
-                    <div className="tech-single"><i class="fa-brands fa-less"></i></div>
+                    <div className="tech-single"><i className="fa-brands fa-linux"></i></div>
+                    <div className="tech-single"><i className="fa-brands fa-react"></i></div>
+                    <div className="tech-single"><i className="fa-brands fa-angular"></i></div>
+                    <div className="tech-single"><i className="fa-brands fa-java"></i></div>
+                    <div className="tech-single"><i className="fa-brands fa-js"></i></div>
+                    <div className="tech-single"><i className="fa-brands fa-node-js"></i></div>
+                    <div className="tech-single"><i className="fa-brands fa-python"></i></div>
+                    <div className="tech-single"><i className="fa-brands fa-html5"></i></div>
+                    <div className="tech-single"><i className="fa-brands fa-css3-alt"></i></div>
+                    <div className="tech-single"><i className="fa-brands fa-github"></i></div>
+                    <div className="tech-single"><i className="fa-brands fa-git-alt"></i></div>
+                    <div className="tech-single"><i className="fa-brands fa-sass"></i></div>
+                    <div className="tech-single"><i className="fa-brands fa-less"></i></div>
             </div>
         </section>
     )

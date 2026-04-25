@@ -6,6 +6,7 @@ section.work-section {
     height: 400px;
     background-size: cover;
     background-position: center;
+    flex-wrap: wrap;
 }
 
 section div.info-projects {
@@ -43,6 +44,31 @@ section div.info-projects button {
 }
 
 section div.info-projects button:hover {
+    border: 1px solid white;
+    color: white;
+}
+
+.title-p {
+    color: var(--color-text);
+    margin: 0 auto;
+    padding: 0.5% 0;
+    display: none;
+}
+
+.btn-more-projects {
+    display: none;
+    width: 125px;
+    height: 40px;
+    color: var(--color-text-secondary);
+    background-color: transparent;
+    border: 1px solid var(--color-surface);
+    transition: background-color 0.8s ease, color 1s ease, border 0.8s ease;
+    border-radius: 12px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.btn-more-projects:hover {
     border: 1px solid white;
     color: white;
 }
@@ -85,16 +111,37 @@ section div.projects .project-single:hover {
         width: 35%;
         text-align: center;
     }
-    section.work-section .info-projects h1 {
-        font-size: 28px;
-    }
-    section.work-section .info-projects p {
-        font-size: 14px;
+    section.work-section .projects {
+        width: 65%;
     }
     section.work-section .projects .project-single {
         width: 45%;
     }
     section.work-section .projects .project-single:nth-child(n+5) {
         display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    section.work-section .info-projects {
+        display: none;
+    }
+    section.work-section .info-projects h1 {
+        font-size: 28px;
+    }
+    section.work-section .info-projects p {
+        font-size: 14px;
+    }
+    .title-p {
+        display: block;
+    }
+    .btn-more-projects {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    section.work-section .projects{
+        width: 100%;
+        border-radius: 12px;
     }
 }
