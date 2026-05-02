@@ -7,7 +7,7 @@ const MainContent = () => {
 
             <div className="btns">
                 <button className="btn-my-job">Meu trabalho</button>
-                <button className="btn-tech">Tecnologias</button>
+                <button className="btn-tech">Entre em Contato</button>
             </div>
 
             <section className="intro-card">

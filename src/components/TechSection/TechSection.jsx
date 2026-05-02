@@ -1,5 +1,5 @@
 import './TechSection.css';
-
+//ToDo: adicionar função de hover para mostrar o nome da tecnologia, ou seja, um tooltip, para cada tecnologia, e também adicionar uma breve descrição de cada tecnologia, para mostrar quando o usuário usar o hover na tecnologia.
 const TechSection = () => {
     return (
         <section className="tech-section">
