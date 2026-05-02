@@ -118,8 +118,4 @@ section.tech-section .techs i {
         border-radius: 12px;
         margin-top: 4px;
     }
-    section.tech-section .techs:hover {
-        transition: 0.7s ease;
-        box-shadow: 0 0 10px var(--color-primary);
-    }
 }
