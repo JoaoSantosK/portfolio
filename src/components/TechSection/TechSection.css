@@ -96,6 +96,12 @@ section.tech-section .techs i {
 }
 
 @media screen and (max-width: 750px) {
+    section.tech-section {
+        min-height: auto;
+        height: auto;
+        padding: 40px 20px;
+        gap: 16px;
+    }
     .divisor-t {
         display: none;
     }
