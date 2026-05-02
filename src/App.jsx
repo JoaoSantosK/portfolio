@@ -12,6 +12,7 @@ function App() {
     <MainContent />
     <WorkSection />
     <TechSection />
+    <TalkToMe />
     <Footer />
     </>
   )
