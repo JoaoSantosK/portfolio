@@ -140,7 +140,7 @@ section div.projects .project-single:hover {
         display: none;
     }
     section.work-section .info-projects h1 {
-        font-size: 28px;
+        font-size: 24px;
     }
     section.work-section .info-projects p {
         font-size: 14px;
@@ -152,6 +152,8 @@ section div.projects .project-single:hover {
         display: block;
         margin: 0 auto;
         margin-bottom: 20px;
+        width: 100px;
+        height: 35px;
     }
     section.work-section .projects{
         width: 100%;

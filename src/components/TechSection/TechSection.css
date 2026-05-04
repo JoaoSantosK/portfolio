@@ -123,3 +123,10 @@ section.tech-section .techs i {
         box-shadow: 0 0 10px var(--color-primary);
     }
 }
+
+@media screen and (max-width: 596px) {
+    section.tech-section .techs .tech-single {
+        width: 65px;
+        height: 55px;
+    }
+}
