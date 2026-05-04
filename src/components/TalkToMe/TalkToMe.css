@@ -69,8 +69,10 @@ section.talkTM h1 {
         width: 90%;
         height: auto;
     }
-    .talkTM h1 {
-        font-size: 24px;
+    .talkTM .title-line h1 {
+        font-size: 28px;
+        width: 100%;
+        text-align: center;
     }
     .bar-h {
         display: none;
