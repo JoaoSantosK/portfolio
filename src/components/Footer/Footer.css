@@ -5,6 +5,7 @@
     background-color: rgba(0, 0, 0, 0.2);
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
     border: 1px solid transparent;
@@ -20,11 +21,29 @@
 footer p {
     color: var(--color-text-secondary);
     font-size: 18px;
-    padding: 20px 0;
+    padding: 20px 0 0 0;
+}
+
+footer .contato {
+    display: flex;
+    gap: 20px;
+    padding: 17px 40px;
+}
+
+footer .contato a {
+    color: var(--color-text-secondary);
+    font-size: 24px;
+    transition: color 0.3s ease;
 }
 
 @media screen and (max-width: 790px) {
     .footer-contato {
         width: 90%;
+    }
+}
+
+@media screen and (max-width: 596px) {
+    footer p {
+        font-size: 12px;
     }
 }
