@@ -11,7 +11,7 @@ const TechSection = () => {
             <div className="divisor-t"></div>
             <h1 className="title-t">Tecnologias</h1>
             <div className="techs">
-                    <div className="tech-single"><i className="fa-brands fa-linux"></i></div>
+                        <div className="tech-single"><i className="fa-brands fa-linux"></i></div>
                     <div className="tech-single"><i className="fa-brands fa-react"></i></div>
                     <div className="tech-single"><i className="fa-brands fa-angular"></i></div>
                     <div className="tech-single"><i className="fa-brands fa-java"></i></div>

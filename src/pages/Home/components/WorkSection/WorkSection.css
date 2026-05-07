@@ -125,7 +125,7 @@ section div.projects .project-single:hover {
         width: 65%;
     }
     section.work-section .projects .project-single {
-        width: 45%;
+        width: 44.4%;
     }
     section.work-section .projects .project-single:nth-child(n+5) {
         display: none;
@@ -150,10 +150,9 @@ section div.projects .project-single:hover {
     }
     .btn-more-projects {
         display: block;
-        margin: 0 auto;
-        margin-bottom: 20px;
-        width: 100px;
+        width: 90px;
         height: 35px;
+        margin: 0 auto 20px auto;
     }
     section.work-section .projects{
         width: 100%;

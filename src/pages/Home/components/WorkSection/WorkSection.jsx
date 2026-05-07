@@ -1,4 +1,5 @@
 import './WorkSection.css';
+import { Link } from 'react-router-dom';
 
 const WorkSection = () => {
     return (
@@ -12,14 +13,14 @@ const WorkSection = () => {
             <h1 className="title-p">Meu trabalho</h1>
             <button className="btn-more-projects">Ver Mais</button>
             <div className="projects">
-                <div className="project-single"></div>
-                <div className="project-single"></div>
-                <div className="project-single"></div>
-                <div className="project-single"></div>
-                <div className="project-single"></div>
-                <div className="project-single"></div>
-                <div className="project-single"></div>
-                <div className="project-single"></div>
+                    <div className="project-single"></div>
+                    <div className="project-single"></div>
+                    <div className="project-single"></div>
+                    <div className="project-single"></div>
+                    <div className="project-single"></div>
+                    <div className="project-single"></div>
+                    <div className="project-single"></div>
+                    <div className="project-single"></div>
             </div>
         </section>
     )

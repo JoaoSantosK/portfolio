@@ -1,21 +1,17 @@
-import Header from "./components/Header/Header";
-import MainContent from "./components/MainContent/MainContent";
-import WorkSection from "./components/WorkSection/WorkSection";
-import TechSection from "./components/TechSection/TechSection";
-import Footer from "./components/Footer/Footer";
-import TalkToMe from "./components/TalkToMe/TalkToMe";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Home from "./pages/Home/Home";
+import MyWork from "./pages/MyWork/MyWork";
 
 function App() {
   return (
-    <>
-    <Header />
-    <MainContent />
-    <WorkSection />
-    <TechSection />
-    <TalkToMe />
-    <Footer />
-    </>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/mywork" element={<MyWork />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
