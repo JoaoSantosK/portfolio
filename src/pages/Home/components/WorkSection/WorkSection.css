@@ -33,7 +33,7 @@ section div.info-projects p {
     color: var(--color-text-secondary);
 }
 
-section div.info-projects button {
+section div.info-projects button.btn-projects {
     width: 125px;
     height: 40px;
     color: var(--color-text-secondary);
@@ -45,9 +45,14 @@ section div.info-projects button {
     cursor: pointer;
 }
 
-section div.info-projects button:hover {
+section div.info-projects button.btn-projects:hover {
     border: 1px solid white;
     color: white;
+}
+
+.btn-projects {
+    text-decoration: none;
+    margin: 0 auto 0 auto;
 }
 
 .divisor-p {
@@ -76,6 +81,12 @@ section div.info-projects button:hover {
     border-radius: 12px;
     font-size: 15px;
     cursor: pointer;
+}
+
+.btn-router {
+    display: none;
+    text-decoration: none;
+    margin: 0 auto 0 auto;
 }
 
 .btn-more-projects:hover {
@@ -153,6 +164,9 @@ section div.projects .project-single:hover {
         width: 90px;
         height: 35px;
         margin: 0 auto 20px auto;
+    }
+    .btn-router {
+        display: block;
     }
     section.work-section .projects{
         width: 100%;

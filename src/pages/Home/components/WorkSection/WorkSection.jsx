@@ -1,5 +1,5 @@
 import './WorkSection.css';
-import { Link } from 'react-router-dom';
+import RouterLink from '../../../../components/RouterLink/RouterLink';
 
 const WorkSection = () => {
     return (
@@ -7,20 +7,20 @@ const WorkSection = () => {
             <div className="info-projects">
                 <h1>Meu trabalho</h1>
                 <p>Here are some of my recent projects, those who have been a great challenge and have helped me grow as a developer.</p>
-                <button>Ver Mais</button>
+                <RouterLink to="../../../MyWork" className="btn-projects"><button className="btn-projects">Ver Mais</button></RouterLink>
             </div>
             <div className="divisor-p"></div>
             <h1 className="title-p">Meu trabalho</h1>
-            <button className="btn-more-projects">Ver Mais</button>
+            <RouterLink to="../../../MyWork" className="btn-router"><button className="btn-more-projects">Ver mais</button></RouterLink>
             <div className="projects">
-                    <div className="project-single"></div>
-                    <div className="project-single"></div>
-                    <div className="project-single"></div>
-                    <div className="project-single"></div>
-                    <div className="project-single"></div>
-                    <div className="project-single"></div>
-                    <div className="project-single"></div>
-                    <div className="project-single"></div>
+                    <RouterLink to="../../../MyWork" className="project-single"></RouterLink>
+                    <RouterLink to="../../../MyWork" className="project-single"></RouterLink>
+                    <RouterLink to="../../../MyWork" className="project-single"></RouterLink>
+                    <RouterLink to="../../../MyWork" className="project-single"></RouterLink>
+                    <RouterLink to="../../../MyWork" className="project-single"></RouterLink>
+                    <RouterLink to="../../../MyWork" className="project-single"></RouterLink>
+                    <RouterLink to="../../../MyWork" className="project-single"></RouterLink>
+                    <RouterLink to="../../../MyWork" className="project-single"></RouterLink>
             </div>
         </section>
     )
