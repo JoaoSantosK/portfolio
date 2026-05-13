@@ -1,0 +1,111 @@
+
+div.project-card {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+div.project-card .project-images {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex: 1;
+}
+
+.desktop-img {
+    max-width: 500px;
+    border-radius: 12px;
+}
+
+.mobile-img {
+    max-width: 140px;
+    border-radius: 12px;
+}
+
+div.project-card .project-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+div.project-card .project-info h1 {
+    font-size: 24px;
+    color: var(--color-text);
+}
+
+div.project-card .project-info p {
+    font-size: 16px;
+    color: var(--color-text-secondary);
+    line-height: 1.5;
+}
+
+.project-link {
+    width: fit-content;
+    padding: 12px 24px;
+    background: #01906F;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 1098px) {
+    div.project-card {
+        flex-direction: row;
+    }
+    div.project-card .project-images {
+        position: relative;
+        flex-direction: row;
+        width: 55%;
+    }
+    div.project-card .project-info {
+        align-items: center;
+        text-align: center;
+    }
+    .desktop-img {
+        width: 100%;
+        position: relative;
+        z-index: 1;
+    }
+    .mobile-img {
+        position: absolute;
+        width: 28%;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+    }
+}
+
+@media screen and (max-width: 678px) {
+    div.project-card {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 24px 16px;
+    }
+    div.project-card .project-images {
+        width: 100%;
+        max-width: 420px;
+        position: relative;
+    }
+    div.project-card .project-info {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    /* somente o texto */
+    div.project-card .project-info h1,
+    div.project-card .project-info p {
+        display: none;
+    }
+    /* manter o botão */
+    .project-link {
+        margin-top: 10px;
+    }
+}

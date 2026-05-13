@@ -1,0 +1,12 @@
+section.mywork-MP {
+    width: 100%;
+    height: calc(100% - 60px);
+    background-color: rgba(0, 0, 0, 0.116);
+}
+
+.mywork-title {
+    font-size: 32px;
+    color: var(--color-text);
+    text-align: center;
+    padding: 20px 0;
+}
