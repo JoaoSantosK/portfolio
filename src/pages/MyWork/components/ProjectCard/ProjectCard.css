@@ -55,6 +55,23 @@ div.project-card .project-info p {
     border-radius: 10px;
 }
 
+/*Project techs*/
+.project-techs {
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    margin-top: 16px;
+    flex-wrap: wrap;
+}
+
+.project-techs i {
+    font-size: 28px;
+    background: linear-gradient(135deg, #2563eb, #22c55e);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 @media screen and (max-width: 1098px) {
     div.project-card {
         flex-direction: row;
