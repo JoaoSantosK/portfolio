@@ -72,6 +72,42 @@ div.project-card .project-info p {
     -webkit-text-fill-color: transparent;
 }
 
+.project-actions {
+    display: flex;
+    gap: 16px;
+}
+
+.project-techs i:not(.tech-icon) {
+    font-size: 28px;
+    background: linear-gradient(135deg, #2563eb, #22c55e);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.project-techs .tech-icon {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    min-width: 28px;
+
+    background: linear-gradient(135deg, #2563eb, #22c55e);
+
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    -webkit-mask-size: contain;
+}
+
+.project-techs .prisma-icon {
+    mask-image: url("https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/prisma.svg");
+    -webkit-mask-image: url("https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/prisma.svg");
+}
+
 @media screen and (max-width: 1098px) {
     div.project-card {
         flex-direction: row;

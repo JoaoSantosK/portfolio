@@ -1,12 +1,12 @@
 import './MyWorkMain.css';
 import ProjectCard from '../ProjectCard/ProjectCard';
 
+//Project images
 import project01DI from '../../../../assets/projects/api-js.png';
 import project02DI from '../../../../assets/projects/cardapio-delivery-pj.png';
 import project03DI from '../../../../assets/projects/java-program-project.png';
-
 import project04DI from '../../../../assets/projects/agencia-marketing-project.png';
-import project04M from '../../../../assets/projects/agencia-marketing-projectM.png';
+import project04M from '../../../../assets/projects/agencia-marketing-projectM.png'; //Mobile image
 
 const MyWorkMain = () => {
     return(
@@ -24,6 +24,7 @@ const MyWorkMain = () => {
                             <div className="project-techs">
                                 <i className="fa-brands fa-js"></i>
                                 <i className="fa-brands fa-mdb"></i>
+                                <i className="tech-icon prisma-icon"></i>
                             </div>
                         </>
                     }
@@ -36,7 +37,7 @@ const MyWorkMain = () => {
                     description={
                         <>
                             <p>
-                                Projeto de cardápio digital desenvolvido com JavaScript. Permite aos usuários navegar pelo cardápio, adicionar itens ao carrinho e realizar pedidos. O backend foi desenvolvido com Express.js e MongoDB, utilizando Prisma para gerenciar os dados.
+                                Projeto de cardápio digital desenvolvido com JavaScript. Permite aos usuários navegar pelo cardápio, adicionar itens ao carrinho e realizar pedidos. O backend foi desenvolvido com Express.js.
                             </p>
                             <p>
                                 Atualizações futuras: Aperfeiçoar front-end; Adição de funcionalidades como personalização de pedidos; Sistema de pagamento online; Sistema de avaliação e feedback dos clientes; Gerenciamento de estoque para os administradores;
@@ -91,6 +92,7 @@ const MyWorkMain = () => {
                     desktopImg={project04DI}
                     mobileImg={project04M}
                     link="https://example.com/project-link"
+                    siteLink="https://joaosantosk.github.io/Agencia-marketing/"
                 />
             </section>
         </>
