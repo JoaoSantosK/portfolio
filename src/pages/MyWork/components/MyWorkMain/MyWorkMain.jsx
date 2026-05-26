@@ -1,6 +1,8 @@
 import './MyWorkMain.css';
 import ProjectCard from '../ProjectCard/ProjectCard';
 
+import project01DI from '../../../../assets/api-js.png';
+
 const MyWorkMain = () => {
     return(
         <>
@@ -15,16 +17,24 @@ const MyWorkMain = () => {
                 />
                 <ProjectCard
                     title="Project Title"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                    desktopImg="https://placehold.co/500x300"
-                    mobileImg="https://placehold.co/200x300"
+                    description={
+                        <>
+                            <p>Outro projeto pessoal desenvolvido com React e Node.js</p>
+                        </>
+                    }
+                    desktopImg={"https://placehold.co/500x300"}
+                    mobileImg={"https://placehold.co/200x300"}
                     link="https://example.com/project-link"
                 />
                 <ProjectCard
                     title="Project Title"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                    desktopImg="https://placehold.co/500x300"
-                    mobileImg="https://placehold.co/200x300"
+                    description={
+                        <>
+                            <p>Terceiro projeto pessoal desenvolvido com React e Node.js</p>
+                        </>
+                    }
+                    desktopImg={"https://placehold.co/500x300"}
+                    mobileImg={"https://placehold.co/200x300"}
                     link="https://example.com/project-link"
                 />
             </section>
