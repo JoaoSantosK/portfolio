@@ -74,7 +74,28 @@ div.project-card .project-info p {
 
 .project-actions {
     display: flex;
-    gap: 16px;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+
+.project-link {
+    padding: 12px 20px;
+    font-size: 16px;
+    color: var(--color-text-secondary);
+    background-color: var(--color-surface);
+    border: 1px solid transparent;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.project-link:hover {
+    color: var(--color-primary);
+    background-color: var(--color-bg);
+    border: 1px solid white;
 }
 
 .project-techs i:not(.tech-icon) {
@@ -91,13 +112,10 @@ div.project-card .project-info p {
     width: 28px;
     height: 28px;
     min-width: 28px;
-
     background: linear-gradient(135deg, #2563eb, #22c55e);
-
     mask-repeat: no-repeat;
     mask-position: center;
     mask-size: contain;
-
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-position: center;
     -webkit-mask-size: contain;

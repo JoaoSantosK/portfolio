@@ -2,11 +2,14 @@ import './MyWorkMain.css';
 import ProjectCard from '../ProjectCard/ProjectCard';
 
 //Project images
-import project01DI from '../../../../assets/projects/api-js.png';
-import project02DI from '../../../../assets/projects/cardapio-delivery-pj.png';
-import project03DI from '../../../../assets/projects/java-program-project.png';
-import project04DI from '../../../../assets/projects/agencia-marketing-project.png';
-import project04M from '../../../../assets/projects/agencia-marketing-projectM.png'; //Mobile image
+import project01DI from '../../assets/projeto01/api-js.png'; // D
+import project02DI from '../../assets/projeto02/cardapio-delivery-pj.png'; // D
+import project03DI from '../../assets/projeto03/java-program-project.png'; // D
+import project04DI from '../../assets/projeto04/agencia-marketing-project.png'; // D
+import project04M from '../../assets/projeto04/agencia-marketing-projectM.png'; // M
+import project05M from '../../assets/projeto05/veiculos-projeto01.png'; // M
+//import project05M02 from '../../assets/projeto06/veiculos-projeto02.png'; // M
+//import project05M02 from '../../assets/projeto07/veiculos-projeto03.png'; // M
 
 const MyWorkMain = () => {
     return(
@@ -46,6 +49,7 @@ const MyWorkMain = () => {
                                 <i class="fa-brands fa-html5"></i>
                                 <i class="fa-brands fa-css3-alt"></i>
                                 <i className="fa-brands fa-js"></i>
+                                <i className="fa-brands fa-openai"></i>
                             </div>
                         </>
                     }   
@@ -93,6 +97,27 @@ const MyWorkMain = () => {
                     mobileImg={project04M}
                     link="https://example.com/project-link"
                     siteLink="https://joaosantosk.github.io/Agencia-marketing/"
+                />
+                <ProjectCard
+                    title="Site para venda de carros"
+                    description={
+                        <>
+                            <p>
+                                Desenvolvido como um projeto de estudo, este site para venda de carros foi criado através de conceitos de design e responsividade.
+                            </p>
+                            <p>
+                                
+                            </p>
+                            <div className="project-techs">
+                                <i class="fa-brands fa-html5"></i>
+                                <i class="fa-brands fa-css3-alt"></i>
+                            </div>
+                        </>
+                    }
+                    desktopImg={project05M}
+                    mobileImg={project05M}
+                    link="https://example.com/project-link"
+                    siteLink="https://joaosantosk.github.io/Loja-de-venda-veicular/"
                 />
             </section>
         </>
