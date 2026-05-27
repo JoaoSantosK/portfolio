@@ -5,7 +5,7 @@ import MyWork from "./pages/MyWork/MyWork";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/portfolio">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/mywork" element={<MyWork />} />
