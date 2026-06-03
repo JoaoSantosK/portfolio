@@ -13,6 +13,11 @@ header h1 {
     font-size: 24px;
 }
 
+.logo-link {
+  text-decoration: none;
+  color: inherit;
+}
+
 header nav.nav-desk {
     margin-right: 80px;
     width: 200px;
@@ -46,6 +51,7 @@ header nav.nav-mob {
     display: none;
     justify-content: center;
     align-items: center;
+    z-index: 3;
 }
 
 header .icon {

@@ -95,7 +95,7 @@ const MyWorkMain = () => {
                     }
                     desktopImg={project04DI}
                     mobileImg={project04M}
-                    link="https://example.com/project-link"
+                    link="https://github.com/JoaoSantosK/Agencia-marketing"
                     siteLink="https://joaosantosk.github.io/Agencia-marketing/"
                 />
                 <ProjectCard
@@ -116,7 +116,7 @@ const MyWorkMain = () => {
                     }
                     desktopImg={project05M}
                     mobileImg={project05M}
-                    link="https://example.com/project-link"
+                    link="https://github.com/JoaoSantosK/Loja-de-venda-veicular"
                     siteLink="https://joaosantosk.github.io/Loja-de-venda-veicular/"
                 />
             </section>

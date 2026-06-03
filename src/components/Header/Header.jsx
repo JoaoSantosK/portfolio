@@ -1,4 +1,5 @@
 import './Header.css';
+import { Link } from 'react-router-dom';
 import { useState} from 'react'; // Importando useState para navegação móvel
 
 const Header = () => {
@@ -10,7 +11,9 @@ const Header = () => {
 
     return (
         <header>
-            <h1>João Santos</h1>
+            <Link to="/" className="logo-link">
+                <h1>João Santos</h1>
+            </Link>
                 <nav className="nav-desk">
                     <ul>
                         <li><a href="#">About</a></li>
