@@ -1,13 +1,18 @@
 import './MainContent.css';
+import RouterLink from '../../../../components/RouterLink/RouterLink';
 
 const MainContent = () => {
     return (
-        <main className="main">
+        <main className="main" id="about">
             <h1>Desenvolvedor Full-Stack</h1>
 
             <div className="btns">
-                <button className="btn-my-job">Meu trabalho</button>
-                <button className="btn-tech">Entre em Contato</button>
+                <RouterLink to="/mywork" className="btn-my-job">
+                    Meu trabalho
+                </RouterLink>
+                <button className="btn-tech">
+                    Entre em Contato
+                </button>
             </div>
 
             <section className="intro-card">

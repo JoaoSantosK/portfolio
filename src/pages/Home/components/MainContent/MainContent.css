@@ -21,8 +21,8 @@ main h1 {
     gap: 20px;
 }
 
-button.btn-my-job {
-    padding: 15px 25px;
+.btn-my-job {
+    padding: 15px 20px;
     font-size: 16px;
     color: var(--color-text-secondary);
     background-color: var(--color-surface);
@@ -30,26 +30,28 @@ button.btn-my-job {
     border-radius: 9px;
     cursor: pointer;
     transition: 0.3s ease;
+    text-decoration: none;
 }
 
-button.btn-my-job:hover {
+.btn-my-job:hover {
     color: var(--color-primary);
     background-color: var(--color-bg);
     border: 1px solid white;
 }
 
-button.btn-tech {
-    padding: 10px 20px;
+.btn-tech {
+    padding: 15px 20px;
     font-size: 16px;
     color: var(--color-text-secondary);
     background-color: transparent;
     border: 1px solid var(--color-surface);
     border-radius: 9px;
     cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease, border 1.2s ease, box-shadow 0.8s ease; 
+    transition: background-color 0.3s ease, color 0.3s ease, border 1.2s ease, box-shadow 0.8s ease;
+    text-decoration: none;
 }
 
-button.btn-tech:hover {
+.btn-tech:hover {
     background-color: var(--color-bg);
     color: var(--color-primary);
     border: 1px solid white;

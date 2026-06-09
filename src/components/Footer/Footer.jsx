@@ -2,7 +2,7 @@ import './Footer.css';
 
 const Footer = () => {
     return (
-        <footer className='footer-contato'>
+        <footer className='footer-contato' id='contact'>
             <p>© 2026 Kaizen. Todos os direitos reservados.</p>
             <div className="contato">
                 <a href="https://github.com/JoaoSantosK?tab=overview&from=2026-05-01&to=2026-05-11" target='_blank'><i className="fab fa-github"></i></a>

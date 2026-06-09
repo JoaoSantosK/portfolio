@@ -1,12 +1,42 @@
 import './Header.css';
-import { Link } from 'react-router-dom';
-import { useState} from 'react'; // Importando useState para navegação móvel
+import { Link, useNavigate, useLocation } from 'react-router-dom';
+import { useState } from 'react';
+import RouterLink from '../RouterLink/RouterLink';
 
 const Header = () => {
-    const [isNavActive, setIsNavActive] = useState(false); // Estado para controlar a navegação móvel
+    const [isNavActive, setIsNavActive] = useState(false);
 
-    const toggleNav = () => { // Função para alternar a navegação móvel
+    const toggleNav = () => {
         setIsNavActive(!isNavActive);
+    };
+    
+    //Sistema de scroll suave para seções da página
+    const navigate = useNavigate();
+    const location = useLocation();
+
+    const scrollToSection = (sectionId) => {
+        setIsNavActive(false);
+
+        const scroll = () => {
+            const section = document.getElementById(sectionId);
+
+            if (section) {
+                section.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start"
+                });
+            }
+        };
+
+        if (location.pathname !== "/") {
+            navigate("/");
+
+            setTimeout(() => {
+                scroll();
+            }, 150);
+        } else {
+            scroll();
+        }
     };
 
     return (
@@ -14,24 +44,62 @@ const Header = () => {
             <Link to="/" className="logo-link">
                 <h1>João Santos</h1>
             </Link>
-                <nav className="nav-desk">
-                    <ul>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </nav>
-                <nav className="nav-mob">
-                    <i className={isNavActive ? 'fa-solid fa-xmark icon' : 'fa-solid fa-bars icon'} id='menu-icon' onClick={toggleNav}></i>
-                    <ul className={isNavActive ? 'active' : ''}>
-                        <h1>Home</h1>
-                        <li onClick={toggleNav}><a href="#">About</a></li>
-                        <li onClick={toggleNav}><a href="#">Projects</a></li>
-                        <li onClick={toggleNav}><a href="#">Contact</a></li>
-                    </ul>
-                </nav>
+
+            <nav className="nav-desk">
+                <ul>
+                    <li>
+                        <button className="nav-btn" onClick={() => scrollToSection("about")}>
+                            About
+                        </button>
+                    </li>
+
+                    <li>
+                        <button className="nav-btn" onClick={() => scrollToSection("projects")}>
+                            Projects
+                        </button>
+                    </li>
+
+                    <li>
+                        <button className="nav-btn" onClick={() => scrollToSection("contact")}>
+                            Contact
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav className="nav-mob">
+                <i
+                    className={isNavActive ? 'fa-solid fa-xmark icon' : 'fa-solid fa-bars icon'}
+                    id="menu-icon"
+                    onClick={toggleNav}
+                ></i>
+
+                <ul className={isNavActive ? 'active' : ''}>
+                    <li>
+                        <Link to="/" onClick={toggleNav}>Home</Link>
+                    </li>
+
+                    <li>
+                        <button className="nav-btn" onClick={() => scrollToSection("about")}>
+                            About
+                        </button>
+                    </li>
+
+                    <li>
+                        <button className="nav-btn" onClick={() => scrollToSection("projects")}>
+                            Projects
+                        </button>
+                    </li>
+
+                    <li>
+                        <button className="nav-btn" onClick={() => scrollToSection("contact")}>
+                            Contact
+                        </button>
+                    </li>
+                </ul>
+            </nav>
         </header>
-    )
-}
+    );
+};
 
 export default Header;

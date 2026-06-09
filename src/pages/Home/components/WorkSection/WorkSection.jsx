@@ -12,7 +12,7 @@ const WorkSection = () => {
             <div className="divisor-p"></div>
             <h1 className="title-p">Meu trabalho</h1>
             <RouterLink to="../../../MyWork" className="btn-router"><button className="btn-more-projects">Ver mais</button></RouterLink>
-            <div className="projects">
+            <div className="projects" id="projects">
                     <RouterLink to="../../../MyWork" className="project-single"></RouterLink>
                     <RouterLink to="../../../MyWork" className="project-single"></RouterLink>
                     <RouterLink to="../../../MyWork" className="project-single"></RouterLink>
