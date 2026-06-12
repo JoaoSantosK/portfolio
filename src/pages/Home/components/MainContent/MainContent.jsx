@@ -1,7 +1,7 @@
 import './MainContent.css';
 import RouterLink from '../../../../components/RouterLink/RouterLink';
 
-const MainContent = () => {
+const MainContent = ({ onOpenContact}) => {
     return (
         <main className="main" id="about">
             <h1>Desenvolvedor Full-Stack</h1>
@@ -10,8 +10,8 @@ const MainContent = () => {
                 <RouterLink to="/mywork" className="btn-my-job">
                     Meu trabalho
                 </RouterLink>
-                <button className="btn-tech">
-                    Entre em Contato
+                <button type="button" className="btn-tech" onClick={onOpenContact}>
+                    Mande um E-mail
                 </button>
             </div>
 
