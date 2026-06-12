@@ -52,3 +52,13 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
+.page-content {
+    transition: filter 0.3s ease;
+}
+
+.page-content.blurred {
+    filter: blur(8px) brightness(0.55);
+    pointer-events: none;
+    user-select: none;
+}
